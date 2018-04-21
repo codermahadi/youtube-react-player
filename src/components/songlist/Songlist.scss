@@ -1,0 +1,38 @@
+$songlist-grey: #888;
+$songlist-font: 'Ubuntu', sans-serif; 
+
+.list__custom { 
+    overflow-x: visible;
+    overflow-y: auto; 
+    max-height: 50vh;
+    border: 1px solid $songlist-grey;
+    font-family: $songlist-font;
+}
+
+.list__custom--img {
+    border-radius: 2px;
+}
+
+.list__custom--text {
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: $songlist-grey; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
